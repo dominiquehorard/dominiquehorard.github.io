@@ -13,7 +13,7 @@ function displayData(responseObject) {
     let dataContent = '';
     /*for loop that goes through the json data*/
     /*for each element in the file, it creates an html element*/
-    for (let i = 0; i < responseObject.length; i++) {
+    for (let i = 0; i < responseObject.degrees_earned.length; i++) {
         /*creates html element for each object in the json file*/
         dataContent += '<h3>' + responseObject[i].school + '</h3>';
         dataContent += '<p class="type">' + responseObject[i].type + '</p>';
