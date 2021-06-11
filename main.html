@@ -3,13 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>AJAX / JSON</title>
-    </head>
-    <body>
-        <!--Empty div to hold the json data once retrieved and formatted-->
-        <div class="degrees_div"></div>
-        <!--Button to attach click event handler to for data retrieval-->
-        <button id="get_degrees">Get Degree Info!</button>        
         <!--needed to give the script a defer tag so it doesn't run before the page finishes loading-->
         <script defer src="main.js"></script>
+    </head>
+    <body>
+        <button id="get_degrees">Get Degree Info!</button>
+        <!--Empty div to hold the json data once retrieved and formatted-->
+        <div id="degrees_div"></div>
     </body>
 </html>
