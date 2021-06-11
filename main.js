@@ -5,26 +5,8 @@ let xhr = new XMLHttpRequest();
 let button = document.getElementById('get_degrees');
 
 /*storing the div where the json data will be displayed in a variable for use later*/
-let displayDiv = document.getElementById('degrees_div');
+let div = document.getElementById('degrees_div');
 
-/*event handler for click event on the button*/
-/*contains and anon func that has the function for parsing/displaying JSON data and get request*/
-button.addEventListener("click", function (e){
-    /*the request that states where to get the information from and if it's asynchronous*/
-    xhr.open('GET', 'degrees_earned.json',true);
-    /*function that defines what to do with the JSON data*/
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            /*storing the response text in the JSON file in a variable for later use*/
-            let responseObject = JSON.parse(xhr.responseText);
-            /*log the response object to the console*/
-            /*console.log(responseObject);*/
-            displayData(responseObject);
-        }
-    };
-    /*send the request to the server*/
-    xhr.send();
-});
 
 /*function that is called in the anon function for the event listener*/
 function displayData(responseObject) {
@@ -39,5 +21,25 @@ function displayData(responseObject) {
         dataContent += '<p class="major">' + responseObject[i].major + '</p>';
         dataContent += '<p class="year">' + responseObject[i].year + '</p>';
     }
-    displayDiv.write(dataContent);
+    /*div.insertAdjacentHTML(dataContent);*/
 }
+
+/*event handler for click event on the button*/
+/*contains and anon func that has the function for parsing/displaying JSON data and get request*/
+button.addEventListener("click", function (e){
+    /*the request that states where to get the information from and if it's asynchronous*/
+    xhr.open('GET', 'degrees_earned.json',true);
+    /*function that defines what to do with the JSON data*/
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            /*storing the response text in the JSON file in a variable for later use*/
+            let responseObject = JSON.parse(xhr.responseText);
+            
+            /*calling the function and using response object as a function*/
+            displayData(responseObject);
+            div.insertAdjacentHTML(dataContent);
+        }
+    };
+    /*send the request to the server*/
+    xhr.send();
+});
