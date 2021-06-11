@@ -39,5 +39,5 @@ function displayData(responseObject) {
         dataContent += '<p class="major">' + responseObject[i].major + '</p>';
         dataContent += '<p class="year">' + responseObject[i].year + '</p>';
     }
-    displayDiv.insertAdjacentHTML('afterbegin',dataContent);
+    displayDiv.write(dataContent);
 }
