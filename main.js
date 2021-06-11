@@ -20,7 +20,7 @@ function displayData(responseObject) {
         dataContent += '<p class="major">' + responseObject[i].major + '</p>';
         dataContent += '<p class="year">' + responseObject[i].year + '</p>';
     }
-    div.insertAdjacentHTML(dataContent);
+    div.insertAdjacentHTML('afterbegin',dataContent);
 }
 
 /*event handler for click event on the button*/
