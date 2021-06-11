@@ -32,12 +32,12 @@ function displayData(responseObject) {
     let dataContent = '';
     /*for loop that goes through the json data*/
     /*for each element in the file, it creates an html element*/
-    for (i = 0; i < data.length; i++) {
+    for (let i = 0; i < responseObject.length; i++) {
         /*creates html element for each object in the json file*/
-        dataContent += '<h3>' + data[i].school + '</h3>';
-        dataContent += '<p class="type">' + data[i].type + '</p>';
-        dataContent += '<p class="major">' + data[i].major + '</p>';
-        dataContent += '<p class="year">' + data[i].year + '</p>';
+        dataContent += '<h3>' + responseObject[i].school + '</h3>';
+        dataContent += '<p class="type">' + responseObject[i].type + '</p>';
+        dataContent += '<p class="major">' + responseObject[i].major + '</p>';
+        dataContent += '<p class="year">' + responseObject[i].year + '</p>';
     }
     displayDiv.insertAdjacentHTML('afterbegin',dataContent);
 }
