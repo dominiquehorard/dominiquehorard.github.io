@@ -4,14 +4,13 @@ let xhr = new XMLHttpRequest();
 /*storing the button element in a variable for later use with event handler*/
 let button = document.getElementById('get_degrees');
 
-/*storing the div where the json data will be displayed in a variable for use later*/
-let div = document.getElementById('degrees_div');
-
 
 /*function that is called in the anon function for the event listener*/
 function displayData(responseObject) {
     /*variable that will store the strings created out of json data*/
     let dataContent = '';
+    /*storing the div where the json data will be displayed in a variable for use later*/
+    let div = document.getElementById('degrees_div');
     /*for loop that goes through the json data*/
     /*for each element in the file, it creates an html element*/
     for (let i = 0; i < responseObject.length; i++) {
@@ -21,7 +20,7 @@ function displayData(responseObject) {
         dataContent += '<p class="major">' + responseObject[i].major + '</p>';
         dataContent += '<p class="year">' + responseObject[i].year + '</p>';
     }
-    /*div.insertAdjacentHTML(dataContent);*/
+    div.insertAdjacentHTML(dataContent);
 }
 
 /*event handler for click event on the button*/
@@ -37,7 +36,6 @@ button.addEventListener("click", function (e){
             
             /*calling the function and using response object as a function*/
             displayData(responseObject);
-            div.insertAdjacentHTML(dataContent);
         }
     };
     /*send the request to the server*/
