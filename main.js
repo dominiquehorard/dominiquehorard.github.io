@@ -7,23 +7,6 @@ let button = document.getElementById('get_degrees');
 /*storing the div where the json data will be displayed in a variable for use later*/
 let div = document.getElementById('degrees_div');
 
-/*function that is called in the anon function for the event listener*/
-function displayData(responseObject) {
-    /*variable that will store the strings created out of json data*/
-    let dataContent = '';
-    /*for loop that goes through the json data*/
-    /*for each element in the file, it creates an html element*/
-    for (let i = 0; i < responseObject.degrees_earned.length; i++) {
-        /*creates html element for each object in the json file*/
-        dataContent += '<h3>' + responseObject[i].school + '</h3>';
-        dataContent += '<p class="type">' + responseObject[i].type + '</p>';
-        dataContent += '<p class="major">' + responseObject[i].major + '</p>';
-        dataContent += '<p class="year">' + responseObject[i].year + '</p>';
-    }
-    div.insertAdjacentHTML('afterbegin','TEST');
-    console.log(dataContent);
-}
-
 /*event handler for click event on the button*/
 /*contains and anon func that has the function for parsing/displaying JSON data and get request*/
 button.addEventListener("click", function (e){
@@ -42,3 +25,20 @@ button.addEventListener("click", function (e){
     /*send the request to the server*/
     xhr.send();
 });
+
+/*function that is called in the anon function for the event listener*/
+function displayData(responseObject) {
+    /*variable that will store the strings created out of json data*/
+    let dataContent = '';
+    /*for loop that goes through the json data*/
+    /*for each element in the file, it creates an html element*/
+    for (let i = 0; i < responseObject.degrees_earned.length; i++) {
+        /*creates html element for each object in the json file*/
+        dataContent += '<h3>' + responseObject[i].school + '</h3>';
+        dataContent += '<p class="type">' + responseObject[i].type + '</p>';
+        dataContent += '<p class="major">' + responseObject[i].major + '</p>';
+        dataContent += '<p class="year">' + responseObject[i].year + '</p>';
+    }
+    div.insertAdjacentHTML('afterbegin','TEST');
+    console.log(dataContent);
+}
