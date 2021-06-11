@@ -8,8 +8,8 @@ let button = document.getElementById('get_degrees');
 let displayDiv = document.getElementById('degrees_div');
 
 /*function that is called in the anon function for the event listener*/
-function displayData(jsonObject) {
-    displayDiv.insertAdjacentHTML('afterbegin', 'test');
+function displayData(data) {
+    displayDiv.insertAdjacentHTML('beforebegin', 'test');
 }
 
 /*event handler for click event on the button*/
@@ -23,7 +23,7 @@ button.addEventListener("click", function (e){
             /*storing the response text in the JSON file in a variable for later use*/
             let responseObject = JSON.parse(xhr.responseText);
             /*log the response object to the console*/
-            console.log(responseObject);
+            /*console.log(responseObject);*/
             displayData(responseObject);
         }
     };
