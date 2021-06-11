@@ -9,7 +9,18 @@ let displayDiv = document.getElementById('degrees_div');
 
 /*function that is called in the anon function for the event listener*/
 function displayData(data) {
-    displayDiv.insertAdjacentHTML('beforebegin', 'test');
+    /*variable that will store the strings created out of json data*/
+    let newContent = '';
+    /*for loop that goes through the json data*/
+    /*for each element in the file, it creates an html element*/
+    for (i = 0; i < data.length; i++) {
+        /*creates html element for each object in the json file*/
+        newContent += '<h3>' + data[i].school + '</h3>';
+        newContent += '<p class="type">' + data[i].type + '</p>';
+        newContent += '<p class="major">' + data[i].major + '</p>';
+        newContent += '<p class="year">' + data[i].year + '</p>';
+    }
+    displayDiv.insertAdjacentHTML('beforebegin', newContent);
 }
 
 /*event handler for click event on the button*/
