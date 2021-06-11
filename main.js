@@ -4,7 +4,8 @@ let xhr = new XMLHttpRequest();
 /*function that defines what to do with the JSON data*/
 xhr.onload = function () {
     if (xhr.status === 200) {
-        console.log(xhr.responseText);
+        /*storing the response text in the JSON file in a variable for later use*/
+        responseObject = JSON.parse(xhr.responseText);
     }
 }
 
