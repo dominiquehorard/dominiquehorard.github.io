@@ -9,7 +9,7 @@ let displayDiv = document.getElementById('degrees_div');
 
 /*function that is called in the anon function for the event listener*/
 function displayData(data) {
-    displayDiv.innerHTML('beforebegin', 'test');
+    displayDiv.insertAdjacentHTML('beforebegin', 'test');
 }
 
 /*event handler for click event on the button*/
