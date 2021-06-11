@@ -28,5 +28,5 @@ button.addEventListener("click", function (e){
 
 /*function that is called in the anon function for the event listener*/
 function displayData(jsonObject) {
-    displayDiv.insertAdjacentHTML('beforebegin', 'test')
+    displayDiv.insertAdjacentHTML('afterbegin', 'test')
 }
