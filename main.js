@@ -21,6 +21,7 @@ function displayData(responseObject) {
         dataContent += '<p class="year">' + responseObject[i].year + '</p>';
     }
     div.insertAdjacentHTML('afterbegin','TEST');
+    console.log(dataContent);
 }
 
 /*event handler for click event on the button*/
