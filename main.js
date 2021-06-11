@@ -21,5 +21,5 @@ button.addEventListener("click", function (e){
     };
 
     /*send the request to the server*/
-    xhr.send(null);
+    xhr.send();
 });
