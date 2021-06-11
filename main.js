@@ -7,6 +7,11 @@ let button = document.getElementById('get_degrees');
 /*storing the div where the json data will be displayed in a variable for use later*/
 let displayDiv = document.getElementById('degrees_div');
 
+/*function that is called in the anon function for the event listener*/
+function displayData(jsonObject) {
+    displayDiv.insertAdjacentHTML('afterbegin', 'test');
+}
+
 /*event handler for click event on the button*/
 /*contains and anon func that has the function for parsing/displaying JSON data and get request*/
 button.addEventListener("click", function (e){
@@ -26,7 +31,3 @@ button.addEventListener("click", function (e){
     xhr.send();
 });
 
-/*function that is called in the anon function for the event listener*/
-function displayData(jsonObject) {
-    displayDiv.insertAdjacentHTML('afterbegin', 'test');
-}
