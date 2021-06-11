@@ -27,7 +27,7 @@ button.addEventListener("click", function (e){
 });
 
 /*function that is called in the anon function for the event listener*/
-function displayData(data) {
+function displayData(responseObject) {
     /*variable that will store the strings created out of json data*/
     let dataContent = '';
     /*for loop that goes through the json data*/
