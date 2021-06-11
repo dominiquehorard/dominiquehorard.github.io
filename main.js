@@ -21,7 +21,8 @@ function displayData(data) {
         newContent += '<p class="year">' + data[i].year + '</p>';
     }
     /*displayDiv.insertAdjacentHTML('afterbegin', newContent);*/
-    displayDiv.insertAdjacentHTML('afterbegin', newContent);
+    /*displayDiv.insertAdjacentHTML('afterbegin', newContent);*/
+    displayDiv.innerHTML = newContent;
 }
 
 /*event handler for click event on the button*/
