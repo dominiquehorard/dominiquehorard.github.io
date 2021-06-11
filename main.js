@@ -17,7 +17,7 @@ button.addEventListener("click", function (e){
             /*storing the response text in the JSON file in a variable for later use*/
             let responseObject = JSON.parse(xhr.responseText);
             /*log the response object to the console*/
-            console.log(resposnseObject);
+            console.log(responseObject);
         }
     };
 
