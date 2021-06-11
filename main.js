@@ -12,6 +12,7 @@ button.addEventListener("click", function (e){
         if (xhr.status === 200) {
             /*storing the response text in the JSON file in a variable for later use*/
             let responseObject = JSON.parse(xhr.responseText);
+            console.log(resposnseObject)
         }
 
         /*the request that states where to get the information from and if it's asynchronous*/
