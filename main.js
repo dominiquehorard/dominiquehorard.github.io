@@ -44,8 +44,8 @@ function displayData(responseObject) {
         /*creates html element for each object in the json file*/
         dataContent += '<div class="degree_container">';
         dataContent += '<h3>' + responseObject.degrees_earned[i].school + '</h3>';
-        dataContent += '<p class="type_major">' + responseObject.degrees_earned[i].type + '&nbsp;' + '&mdash;'  + '&nbsp;' + responseObject.degrees_earned[i].major + '</p>';
-        dataContent += '<p class="year">' + responseObject.degrees_earned[i].year + '</p>';
+        dataContent += '<p class="type_major">Degree:' + '&nbsp;' + responseObject.degrees_earned[i].type + '&nbsp;' + '&mdash;'  + '&nbsp;' + responseObject.degrees_earned[i].major + '</p>';
+        dataContent += '<p class="year">Year Conferred:' + '&nbsp;' + responseObject.degrees_earned[i].year + '</p>';
         dataContent += '</div>'
     }
     div.insertAdjacentHTML('afterbegin',dataContent);
