@@ -15,9 +15,9 @@ body {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    width: 40vw;
-    height: 62vh;
-    border: 1px solid grey;
+    width: 30vw;
+    height: 50vh;
+    border: 0.2em solid grey;
     border-radius: 1.5em;
 }
 
@@ -36,4 +36,9 @@ body {
 .button_div {
     display: flex;
     justify-content: center;
+}
+
+#get_degrees[disabled] {
+    opacity: 0.65;
+    cursor: not-allowed;
 }
