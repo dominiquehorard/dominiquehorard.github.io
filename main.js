@@ -7,6 +7,9 @@ let button = document.getElementById('get_degrees');
 /*storing the div where the json data will be displayed in a variable for use later*/
 let div = document.getElementById('degrees_div');
 
+/*setting click variable so if the button is clicked once it gets disabled*/
+let clicks = 0
+
 /*event handler for click event on the button*/
 /*contains and anon func that has the function for parsing/displaying JSON data and get request*/
 button.addEventListener("click", function (e){
@@ -17,13 +20,18 @@ button.addEventListener("click", function (e){
         if (xhr.status === 200) {
             /*storing the response text in the JSON file in a variable for later use*/
             let responseObject = JSON.parse(xhr.responseText);
-            
+
             /*calling the function and using response object as a function*/
             displayData(responseObject);
         }
     };
     /*send the request to the server*/
     xhr.send();
+
+    clicks++;
+    if (clicks >= 1){
+        button.setAttribute('disabled', 'disabled');
+    }
 });
 
 /*function that is called in the anon function for the event listener*/
@@ -36,7 +44,8 @@ function displayData(responseObject) {
         /*creates html element for each object in the json file*/
         dataContent += '<div class="degree_container">';
         dataContent += '<h3>' + responseObject.degrees_earned[i].school + '</h3>';
-        dataContent += '<p class="type_major">' + responseObject.degrees_earned[i].type + '&nbsp;' + '&mdash;'  + '&nbsp;' + responseObject.degrees_earned[i].major + '</p>';
+        dataContent += '<p class="type">' + responseObject.degrees_earned[i].type + '</p>';
+        dataContent += '<p class="major">' + responseObject.degrees_earned[i].major + '</p>';
         dataContent += '<p class="year">' + responseObject.degrees_earned[i].year + '</p>';
         dataContent += '</div>'
     }
