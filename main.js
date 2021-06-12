@@ -41,6 +41,6 @@ function displayData(responseObject) {
         dataContent += '<p class="year">' + responseObject.degrees_earned[i].year + '</p>';
         dataContent += '</div>'
     }
-    div.insertAdjacentHTML('afterbegin',datacontent);
+    div.insertAdjacentHTML('afterbegin',dataContent);
     console.log(dataContent);
 }
