@@ -34,10 +34,10 @@ function displayData(responseObject) {
     /*for each element in the file, it creates an html element*/
     for (let i = 0; i < responseObject.degrees_earned.length; i++) {
         /*creates html element for each object in the json file*/
-        dataContent += '<h3>' + responseObject[i].school + '</h3>';
-        dataContent += '<p class="type">' + responseObject[i].type + '</p>';
-        dataContent += '<p class="major">' + responseObject[i].major + '</p>';
-        dataContent += '<p class="year">' + responseObject[i].year + '</p>';
+        dataContent += '<h3>' + responseObject.degrees_earned[i].school + '</h3>';
+        dataContent += '<p class="type">' + responseObject.degrees_earned[i].type + '</p>';
+        dataContent += '<p class="major">' + responseObject.degrees_earned[i].major + '</p>';
+        dataContent += '<p class="year">' + responseObject.degrees_earned[i].year + '</p>';
     }
     div.insertAdjacentHTML('afterbegin','TEST');
     console.log(dataContent);
