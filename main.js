@@ -38,7 +38,7 @@ button.addEventListener("click", function (e){
 function displayData(responseObject) {
     /*variable that will store the strings created out of json data*/
     let dataContent = '';
-    dataContent += '<table> <tr> <th>School</th> <th>Degree</th> <th>Major</th> <th>Conferred Year</th> </tr>';
+    dataContent += '<table> <tr> <th>School</th> <th>Degree</th> <th>Major</th> <th>Year</th> </tr>';
     /*for loop that goes through the json data*/
     /*for each element in the file, it creates an html element*/
     for (let i = 0; i < responseObject.degrees_earned.length; i++) {
