@@ -10,6 +10,33 @@ body {
     align-items: center;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top:20px;
+}
+
+table td, table th {
+    border: 1px solid #f9f1ed;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f8f5f1;
+}
+
+table tr:hover {
+    background-color: #f9f1ed;
+}
+
+table th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: #ed6b29;
+    color: white;
+}
+
 .container {
     background-color: white;
     display: flex;
