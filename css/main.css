@@ -1,0 +1,451 @@
+/* RESETTING THE MARGINS FOR THE BODY */
+/** {
+  border: 1px solid #f00 !important;
+}*/
+
+:root{
+  --primary-color: #B2BEB5;
+  --secondary-color: #a4b2a8;
+  --tertiary-color: #e9edea;
+  --quartinary-color: #c0cac2;
+  --quinary-color: #637567;
+  --rich-black: #0C0B13;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  /*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,500&display=swap');*/
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-color);
+}
+
+/* CREATING THE NAV BAR */
+
+header {
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 5em;
+  display: flex;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*********************************/
+/* CSS FOR THE NAVIGATION */
+/*********************************/
+
+.header_nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 4em;
+  text-transform: uppercase;
+}
+
+.nav_list ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  height: 100%;
+  margin: 0;
+}
+
+.nav_list .current {
+  color: var(--tertiary-color);
+  font-weight: 500;
+}
+
+.nav_list .current:hover {
+  color: var(--tertiary-color);
+  font-weight: 500;
+  border-bottom: none;
+}
+
+.header_nav h2 {
+  font-weight: 400;
+}
+
+.header_nav a {
+  padding: 10px;
+  color: var(--rich-black);
+}
+
+.header_nav ul {
+  list-style: none;
+}
+
+.header_nav li {
+  font-weight: 300;
+}
+
+.header_nav ul li a:hover {
+  border-bottom: 1px solid var(--tertiary-color);
+}
+
+.header_nav ul li a:visited {
+  text-decoration: none;
+}
+
+/*.header_nav ul li a:active {
+  color: white;
+  border-bottom: none;
+}*/
+
+/*********************************/
+/* CSS FOR THE MAIN PAGE */
+/*********************************/
+
+/*UPPER PORTION OF MAIN PAGE*/
+
+.hero_landing {
+  width: 100%;
+  height: 60vh;
+}
+
+.hero_body {
+  width: 60%;
+  margin: 5em auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*setting to inline block to ensure the width is only as big as the content*/
+.portrait_picture {
+  width: 30%;
+  height: 100%;
+  display: inline-block;
+}
+
+/*margin set because the element was too close to the end of the container*/
+.declaration_statement {
+  margin: 0 5em;
+}
+
+.declaration_statement h1 {
+  display: inline-block;
+  width: 100%;
+  font-weight: 400;
+}
+
+.declaration_statement p {
+  font-weight: 300;
+}
+
+.main_lower {
+  margin: 0 auto 4em auto;
+  width: 60%;
+  height: 40%;
+}
+
+.main_lower p {
+  font-weight: 300;
+}
+
+.background_info p:last-child {
+  margin-top: 2em;
+}
+
+/*Footer class display flex and setting block elements to inline-block*/
+
+footer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-color);
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4em;
+  width: 100%;
+  height: 100%;
+}
+.footer p{
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/***************************/
+/*CSS FOR THE RESUME PAGE*/
+/***************************/
+
+.resume_body {
+  width: 60%;
+  margin: 4em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.resume_body h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--tertiary-color);
+  font-weight: 400;
+}
+
+.resume_body h4 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.resume-text h5 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.resume_body p, li {
+  font-weight: 300;
+}
+
+.title_date_div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title_date_div h5 {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.skill_div {
+  display: flex;
+  justify-content: space-between;
+/*  padding-left: 2em;
+  padding-right: 2em;*/
+}
+/***************************/
+/*CSS FOR THE CONTACT PAGE*/
+/***************************/
+
+.projects_container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 1em;
+  width: 65%;
+  height: 95vh;
+  margin: 4em auto;
+}
+
+.project_card {
+  max-width: 100%;
+  height: 100%;
+  background-color: var(--quartinary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border-radius: 2em;
+}
+
+
+.project_flex {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.project_heading {
+  margin: 0 auto;
+  width: max-content;
+}
+
+.project_heading h4{
+  margin: 0;
+  display: inline-block;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.proj_img {
+  width: 60%;
+  height: 60%;
+  display: block;
+  border-radius: 2em;
+  margin: 1.5em auto;
+}
+/*For the two images that have some weird box sizing issues*/
+.proj_img.bigger_img {
+  margin: 1em auto;
+}
+
+.git_link {
+  margin: 0 auto;
+  display: flex;
+}
+
+.git_link ion-icon {
+  justify-self: center;
+}
+
+/***************************/
+/*CSS FOR THE GALLERY PAGE*/
+/***************************/
+
+.gallery {
+  display: inline-grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 2em;
+  width: 70%;
+  height: 110%;
+  margin: 4em auto;
+
+}
+
+/*Set max width to 100% and height to 100% so the image fills it's container completely*/
+.gallery_img {
+  max-width: 100%;
+  height: 100%;
+}
+
+/***************************/
+/*CSS FOR THE CONTACT PAGE*/
+/***************************/
+.form_container {
+  margin: 4em auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#contact_form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact_form input[type="text"] {
+  font-size: 1em;
+}
+
+#contact_form textarea {
+  font-size: 1em;
+  width: 100%;
+}
+
+.contact_message {
+  align-self: center;
+}
+
+.contact_message h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.contact_message p {
+  font-weight: 300;
+}
+
+#email_body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.form_control input {
+  width: 100%;
+}
+
+.form_control h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+form .btn-send {
+  margin-top: 1em;
+}
+
+/***************************/
+/*MISC AND UTILITIES CSS*/
+/***************************/
+.icon {
+  font-size: 2em;
+  color: var(--quinary-color);
+  display: flex;
+}
+
+.btn_div {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_div a {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 25%;
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--quartinary-color);
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px var(--quinary-color) solid;
+  width: fit-content;
+  color: var(--quinary-color);
+}
+
+.btn-outline:hover {
+  background-color: var(--quinary-color);
+  color: var(--primary-color);
+}
+
+.btn:hover{
+  transform: scale(.98);
+}
+
+.download-btn {
+  margin-top: 1em;
+}
+
+.btn-send {
+  margin-top: 2em;
+}
+
+.btn_div input[type="submit"]{
+  width: 100%;
+}
+
+#error {
+  color: red;
+}
+
+.error_input {
+  border:solid 0.1em red;
+  border-radius: 0.5em;
+  background: #ffcccb;
+}
