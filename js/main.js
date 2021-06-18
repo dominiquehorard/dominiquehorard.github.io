@@ -56,7 +56,7 @@ form.addEventListener("submit", function(e){
     /*an optional extension addition like .uk  or .ca*/
     if (/^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/.test(e_add) === false) {
         /*alert("Emails can only contain letters,numbers,dots,hyphens,Please review your entry");*/
-        errMsg = 'Emails can only contain letters, numbers, dots, hyphens. Please review your entry';
+        errMsg = 'Please enter a valid email, containing only letters, numbers, dots, hyphens. Please review your entry';
         e.preventDefault();
         errorEl.innerText = errMsg;
         eaddress.classList.add("error_input");
