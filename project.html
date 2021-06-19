@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/print.css" media="print">
+    <script defer src="js/menu_btn.js"></script>
     <script defer src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </head>
   <body>
@@ -24,8 +25,24 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
+        <!--HAMBURGER NAVIGATION-->
+        <div class="menu_btn">
+          <div class="menu_btn_burger">
+          </div>
+        </div>
       </div>
     </header>
+
+    <!--MOBILE NAVIGATION LAYOUT-->
+    <div class="mobile_nav invisible">
+      <ul>
+        <li><a class="current" href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
 
     <!--USE VUE.JS TO ADD IN THE IMAGES FOR THIS PAGE-->
     <div class="projects_container">
@@ -38,6 +55,7 @@
           <div class="img_container">
             <img class='proj_img' src="img/proj_imgs/py_logo.png" alt="Python Journal">
           </div>
+          <p>A python application that sends a user entry to a designated file</p>
           <a target="_blank" class="icon git_link" href="https://github.com/dominiquehorard/CS521-Python-Data-Structures/blob/main/dhorard_term_project.py">
             <ion-icon name="logo-github"></ion-icon></a>
         </div>
@@ -51,6 +69,7 @@
           <div class="img_container">
             <img class='proj_img bigger_img' src="img/proj_imgs/js_calc.png" alt="Simple JS Calculator">
           </div>
+          <p>A JavaScript web application that adds numbers from user inputs</p>
           <a target="_blank" class="icon git_link" href="https://github.com/dominiquehorard/CS601/tree/main/CS601_HW3_horard">
             <ion-icon name="logo-github"></ion-icon></a>
         </div>
@@ -64,6 +83,7 @@
           <div class="img_container">
             <img class='proj_img' src="img/proj_imgs/sql_logo.png" alt="Movie Database">
           </div>
+          <p>Database designed to store watch history between streaming services</p>
           <a target="_blank" class="icon git_link" href="https://github.com/dominiquehorard/CS669_Term_Project/blob/main/DomHorard_TP_IT5.sql">
             <ion-icon name="logo-github"></ion-icon></a>
         </div>
@@ -77,6 +97,7 @@
           <div class="img_container">
             <img class='proj_img bigger_img' src="img/proj_imgs/json_deg.png" alt="JSON Degrees">
           </div>
+          <p>Using AJAX application loads degree information on a button click</p>
           <a target="_blank" class="icon git_link" href="https://github.com/dominiquehorard/CS601/tree/main/CS601_HW5_dhorard">
             <ion-icon name="logo-github"></ion-icon></a>
         </div>

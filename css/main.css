@@ -110,6 +110,33 @@ a {
   text-decoration: none;
 }
 
+/*********************************/
+/* CSS FOR MOBILE NAVIGATION*/
+/*********************************/
+
+.mobile_nav {
+  background-color: var(--secondary-color);
+}
+
+.mobile_nav ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  height: 100%;
+  margin: 0;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.mobile_nav li{
+  margin-bottom: 0.5em;
+}
+
+.mobile_nav a {
+  color: var(--rich-black);
+}
+
 /*.header_nav ul li a:active {
   color: white;
   border-bottom: none;
@@ -252,13 +279,13 @@ footer {
   grid-template-rows: repeat(2, auto);
   grid-gap: 1em;
   width: 65%;
-  height: 95vh;
+  height: 100%;
   margin: 4em auto;
 }
 
 .project_card {
   max-width: 100%;
-  height: 100%;
+  height: 103%;
   background-color: var(--quartinary-color);
   display: flex;
   flex-direction: column;
@@ -284,6 +311,11 @@ footer {
   display: inline-block;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+.project_card p {
+  margin: 0 auto;
+  font-size: 0.8em;
 }
 
 .proj_img {
@@ -333,7 +365,7 @@ footer {
 /***************************/
 .form_container {
   margin: 4em auto;
-  width: 60%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -441,12 +473,92 @@ form .btn-send {
 }
 
 #error {
-  color: #ffcccb;
-
+  color: #cd0000;
+  text-transform: uppercase;
 }
 
 .error_input {
   border:solid 0.1em red;
   border-radius: 0.5em;
   background: #ffcccb;
+}
+
+/*HAMBURGER MENU BUTTON*/
+
+.menu_btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.menu_btn_burger{
+  width: 25px;
+  height: 3px;
+  background: var(--rich-black);
+  border-radius: 5px;
+  transition: all .3s ease-in-out;
+}
+
+.menu_btn_burger::before,
+.menu_btn_burger::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: var(--rich-black);
+  border-radius: 5px;
+  transition: all .3s ease-in-out;
+}
+
+/*ANIMATION WHEN BUTTON CLICKED*/
+
+.menu_btn_burger::before {
+  transform: translateY(-8px);
+}
+
+.menu_btn_burger::after {
+  transform: translateY(8px);
+}
+
+.menu_btn.open .menu_btn_burger {
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+.menu_btn.open .menu_btn_burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu_btn.open .menu_btn_burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/*MOBILE NAVIGATION FOR BUTOTN CLICK*/
+
+.mobile_nav.invisible {
+  display: none;
+}
+
+/***************************/
+/*******MEDIA QUERIES*******/
+/***************************/
+@media screen and (min-width: 800px) {
+  .menu_btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .nav_list {
+    display: none;
+  }
+}
+
+@media screen and (min-width:500px) {
+
 }
