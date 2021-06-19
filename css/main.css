@@ -560,5 +560,7 @@ form .btn-send {
 }
 
 @media screen and (min-width:500px) {
-
+  .nav_list {
+    display: none;
+  }
 }
