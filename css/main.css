@@ -547,7 +547,7 @@ form .btn-send {
 /***************************/
 /*******MEDIA QUERIES*******/
 /***************************/
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
   .menu_btn {
     display: none;
   }
@@ -559,7 +559,38 @@ form .btn-send {
   }
 }
 
-@media screen and (min-width:500px) {
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px) {
+  .nav_list {
+    display: none;
+  }
+}
+
+/*  @media screen and (max-width:500px) {
+
+}*/
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px) {
+  .nav_list {
+    display: none;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px) {
   .nav_list {
     display: none;
   }
