@@ -441,7 +441,8 @@ form .btn-send {
 }
 
 #error {
-  color: red;
+  color: #ffcccb;
+
 }
 
 .error_input {
