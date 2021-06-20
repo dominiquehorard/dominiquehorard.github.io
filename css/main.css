@@ -547,7 +547,13 @@ form .btn-send {
 /***************************/
 /*******MEDIA QUERIES*******/
 /***************************/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
+  .menu_btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .menu_btn {
     display: none;
   }
@@ -598,7 +604,7 @@ and (max-device-width: 800px) {
 
 /* ----------- iPhone 11 ----------- */
 @media only screen
-and (device-width: 414px)
+and (min-device-width: 414px)
 and (device-height: 896px) {
   .nav_list {
     display: none;
@@ -607,7 +613,7 @@ and (device-height: 896px) {
 
 /* ----------- iPhone 11 Pro----------- */
 @media only screen
-and (device-width: 375px)
+and (min-device-width: 375px)
 and (device-height: 812px) {
   .nav_list {
     display: none;
@@ -616,7 +622,7 @@ and (device-height: 812px) {
 
 /* ----------- iPhone 11 Pro Max----------- */
 @media only screen
-and (device-width: 414px)
+and (min-device-width: 414px)
 and (device-height: 896px) {
   .nav_list {
     display: none;
@@ -625,7 +631,7 @@ and (device-height: 896px) {
 
 /* ----------- iPhone 12 & 12 Pro----------- */
 @media only screen
-and (device-width: 390px)
+and (min-device-width: 390px)
 and (device-height: 844px) {
   .nav_list {
     display: none;
@@ -634,7 +640,7 @@ and (device-height: 844px) {
 
 /* ----------- iPhone 12 Pro Max----------- */
 @media only screen
-and (device-width: 428px)
+and (min-device-width: 428px)
 and (device-height: 926px) {
   .nav_list {
     display: none;
