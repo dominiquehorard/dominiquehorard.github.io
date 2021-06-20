@@ -357,7 +357,7 @@ footer {
 /*Set max width to 100% and height to 100% so the image fills it's container completely*/
 .gallery_img {
   max-width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 /***************************/
@@ -547,13 +547,13 @@ form .btn-send {
 /***************************/
 /*******MEDIA QUERIES*******/
 /***************************/
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
   .menu_btn {
     display: none;
   }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-device-width: 800px){
   .nav_list {
     display: none;
   }
@@ -590,7 +590,7 @@ and (max-device-width: 736px) {
 /* Portrait and Landscape */
 @media only screen
 and (min-device-width: 375px)
-and (max-device-width: 812px) {
+and (max-device-width: 800px) {
   .nav_list {
     display: none;
   }
