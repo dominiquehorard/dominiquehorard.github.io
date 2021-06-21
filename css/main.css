@@ -158,6 +158,7 @@ a {
   margin: 5em auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 /*setting to inline block to ensure the width is only as big as the content*/
@@ -169,7 +170,7 @@ a {
 
 /*margin set because the element was too close to the end of the container*/
 .declaration_statement {
-  margin: 0 5em;
+  margin: 0 2.5em 0 0;
 }
 
 .declaration_statement h1 {
