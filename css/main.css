@@ -699,7 +699,7 @@ form .btn-send {
     height: 2.5em;
   }
   .form_control h3 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 
 
@@ -844,7 +844,7 @@ form .btn-send {
   }
 
   .form_control h3 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 
   .contact_message h3 {
@@ -1017,7 +1017,7 @@ and (max-device-width: 667px) {
   }
 
   .form_control h3 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 
   .contact_message h3 {
@@ -1195,7 +1195,7 @@ and (max-device-width: 736px) {
   }
 
   .form_control h3 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 
   .contact_message h3 {
@@ -1392,7 +1392,7 @@ and (max-device-width: 800px) {
   }
 
   .form_control h3 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 
   .btn_div input[type="submit"] {
@@ -1703,7 +1703,7 @@ and (-webkit-device-pixel-ratio: 3) {
   }
 
   .form_control h3 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 
   .contact_message h3 {
@@ -1875,7 +1875,7 @@ and (-webkit-device-pixel-ratio: 3) {
   }
 
   .form_control h3 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 
   .contact_message h3 {
@@ -2047,7 +2047,7 @@ and (-webkit-device-pixel-ratio: 3) {
   }
 
   .form_control h3 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 
   .contact_message h3 {
@@ -2219,9 +2219,9 @@ and (-webkit-device-pixel-ratio: 3) {
   }
 
   .form_control h3 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
-  
+
   .contact_message h3 {
     font-size: 2.5em;
   }
