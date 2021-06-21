@@ -860,7 +860,7 @@ form .btn-send {
   }
 
   #contact_form {
-    transform: translateY(-12em);
+    transform: translateY(-9em);
   }
 
   #contact_form input[type="text"] {
@@ -1380,7 +1380,7 @@ and (max-device-width: 800px) {
   }
 
   #contact_form {
-    transform: translateY(-12em);
+    transform: translateY(-9em);
   }
 
   #contact_form input[type="text"] {
@@ -1719,7 +1719,7 @@ and (-webkit-device-pixel-ratio: 3) {
   }
 
   #contact_form {
-    transform: translateY(-12em);
+    transform: translateY(-9em);
   }
 
   #contact_form input[type="text"] {
@@ -1891,7 +1891,7 @@ and (-webkit-device-pixel-ratio: 3) {
   }
 
   #contact_form {
-    transform: translateY(-12em);
+    transform: translateY(-9em);
   }
 
   #contact_form input[type="text"] {
@@ -2063,7 +2063,7 @@ and (-webkit-device-pixel-ratio: 3) {
   }
 
   #contact_form {
-    transform: translateY(-12em);;
+    transform: translateY(-9em);;
   }
 
   #contact_form input[type="text"] {
@@ -2235,7 +2235,7 @@ and (-webkit-device-pixel-ratio: 3) {
   }
 
   #contact_form {
-    transform: translateY(-12em);
+    transform: translateY(-9em);
   }
 
   #contact_form input[type="text"] {
