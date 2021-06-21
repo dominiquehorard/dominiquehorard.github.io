@@ -277,17 +277,17 @@ footer {
 /***************************/
 
 .projects_container {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
-  grid-gap: 1em;
+  display: flex;
+  grid-gap: 2em;
   width: 65%;
   height: 100%;
   margin: 4em auto;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project_card {
-  max-width: 100%;
+  max-width: 75%;
   height: 103%;
   background-color: var(--quartinary-color);
   display: flex;
@@ -302,6 +302,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-content: center;
+  padding: 0.5em;
 }
 
 .project_heading {
