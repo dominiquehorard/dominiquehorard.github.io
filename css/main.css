@@ -1021,7 +1021,7 @@ and (max-device-width: 667px) {
   }
 
   #contact_form {
-    transform: translateY(-10em);
+    transform: translateY(-12em);
   }
 
   #contact_form input[type="text"] {
@@ -1195,7 +1195,7 @@ and (max-device-width: 736px) {
   }
 
   #contact_form {
-    transform: translateY(-10em);
+    transform: translateY(-12em);
   }
 
   #contact_form input[type="text"] {
