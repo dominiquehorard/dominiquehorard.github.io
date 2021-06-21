@@ -771,7 +771,7 @@ form .btn-send {
   }
 
   .hero_landing {
-    height: 45vh;
+    height: 50vh;
   }
 
   .declaration_statement h1 {
@@ -845,7 +845,7 @@ form .btn-send {
   }
 
   #contact_form {
-    transform: translateY(-19em);
+    transform: translateY(-15em);
   }
 
   #contact_form input[type="text"] {
@@ -854,6 +854,11 @@ form .btn-send {
 
   .form_control input {
     height: 2.5em;
+  }
+
+  .btn_div input[type="submit"] {
+    font-size: 2em;
+    margin-top: 1.5em;
   }
 
   .gallery {
@@ -1102,7 +1107,7 @@ and (max-device-width: 736px) {
   }
 
   .hero_landing {
-    height: 45vh;
+    height: 50vh;
   }
 
   .declaration_statement h1 {
@@ -1176,7 +1181,7 @@ and (max-device-width: 736px) {
   }
 
   #contact_form {
-    transform: translateY(-19em);
+    transform: translateY(-15em);
   }
 
   #contact_form input[type="text"] {
@@ -1185,6 +1190,11 @@ and (max-device-width: 736px) {
 
   .form_control input {
     height: 2.5em;
+  }
+
+  .btn_div input[type="submit"] {
+    font-size: 2em;
+    margin-top: 1.5em;
   }
 
   .gallery {
@@ -1349,6 +1359,11 @@ and (max-device-width: 800px) {
 
   .form_control input {
     height: 2.5em;
+  }
+
+  .btn_div input[type="submit"] {
+    font-size: 2em;
+    margin-top: 1.5em;
   }
 
   .gallery {
@@ -1677,6 +1692,11 @@ and (-webkit-device-pixel-ratio: 3) {
     height: 2.5em;
   }
 
+  .btn_div input[type="submit"] {
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+
   .gallery {
     grid-template-columns: repeat(2, auto);
   }
@@ -1838,6 +1858,11 @@ and (-webkit-device-pixel-ratio: 3) {
 
   .form_control input {
     height: 2.5em;
+  }
+
+  .btn_div input[type="submit"] {
+    font-size: 2em;
+    margin-top: 1.5em;
   }
 
   .gallery {
@@ -2003,6 +2028,11 @@ and (-webkit-device-pixel-ratio: 3) {
     height: 2.5em;
   }
 
+  .btn_div input[type="submit"] {
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+
   .gallery {
     grid-template-columns: repeat(2, auto);
   }
@@ -2164,6 +2194,11 @@ and (-webkit-device-pixel-ratio: 3) {
 
   .form_control input {
     height: 2.5em;
+  }
+
+  .btn_div input[type="submit"] {
+    font-size: 2em;
+    margin-top: 1.5em;
   }
 
   .gallery {
