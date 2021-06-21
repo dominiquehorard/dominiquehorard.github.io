@@ -201,6 +201,8 @@ a {
 footer {
   height: 100%;;
   width: 100%;
+  position: relative;
+  bottom: 0;
   display: flex;
   align-items: center;
   background-color: var(--secondary-color);
@@ -551,17 +553,327 @@ form .btn-send {
   .menu_btn {
     display: none;
   }
+
 }
 
 @media screen and (max-width: 800px) {
   .menu_btn {
     display: none;
   }
-}
-
-@media screen and (max-device-width: 800px){
   .nav_list {
     display: none;
+  }
+
+  header {
+    height: 10em;
+  }
+
+  .header_nav h2 {
+    font-size: 3em;
+  }
+
+  .menu_btn_burger,
+  .menu_btn_burger::before,
+  .menu_btn_burger::after {
+    width: 75px;
+    height: 6px;
+  }
+
+  .menu_btn_burger::before {
+    transform: translateY(-16px);
+  }
+
+  .menu_btn_burger::after {
+    transform: translateY(16px);
+  }
+
+  .menu_btn {
+    height: 150px;
+  }
+
+  .mobile_nav li {
+    font-size: 2em;
+  }
+
+  .hero_body {
+    flex-direction: column;
+  }
+
+  .declaration_statement {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portrait_picture {
+    width: 90%;
+  }
+
+  .hero_landing {
+    height: 45vh;
+  }
+
+  .declaration_statement h1 {
+    font-size: 3em;
+  }
+
+  .declaration_statement p {
+    font-size: 1.8em;
+  }
+
+  .background_info p {
+    font-size: 1.8em;
+  }
+
+  footer {
+    height: 10em;
+  }
+
+  footer p {
+    font-size: 2em;
+  }
+
+  .icon {
+    font-size: 4em;
+  }
+
+  .resume_body {
+    font-size: 2em;
+  }
+
+  .resume_body p, li {
+    font-size: 0.8em;
+  }
+
+  .title_date_div {
+    flex-direction: column;
+  }
+
+  .resume_body h4 {
+    font-size: .9em;
+    margin-bottom: -0.7em;
+  }
+
+  .title_date_div h5 {
+    font-size: 0.7em;
+  }
+
+  .skill_div {
+    flex-direction: column;
+  }
+
+  .btn_div a {
+    margin-top: 0;
+  }
+
+  .form_container {
+    width: 70%;
+    height: 79vh;
+  }
+
+  .contact_message h3 {
+    font-size: 2.5em;
+  }
+
+  .contact_message p {
+    font-size: 1.7em;
+  }
+
+  .container.grid h3 {
+    font-size: 2em;
+  }
+
+  #contact_form {
+    transform: translateY(-19em);
+  }
+
+  #contact_form input[type="text"] {
+    font-size: 1.5em;
+  }
+
+  .form_control input {
+    height: 2.5em;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .projects_container {
+    display: flex;
+    grid-gap: 2em;
+    width: 75%;
+    margin: 4em auto;
+    flex-direction: column;
+  }
+
+  .project_heading {
+    font-size: 2em;
+  }
+
+  .project_card p {
+    margin: 0 0.5em 0.5em 0.5em;
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-device-width: 800px) {
+  .nav_list {
+    display: none;
+  }
+
+  header {
+    height: 10em;
+  }
+
+  .header_nav h2 {
+    font-size: 3em;
+  }
+
+  .menu_btn_burger,
+  .menu_btn_burger::before,
+  .menu_btn_burger::after {
+    width: 75px;
+    height: 6px;
+  }
+
+  .menu_btn_burger::before {
+    transform: translateY(-16px);
+  }
+
+  .menu_btn_burger::after {
+    transform: translateY(16px);
+  }
+
+  .menu_btn {
+    height: 150px;
+  }
+
+  .mobile_nav li {
+    font-size: 2em;
+  }
+
+  .hero_body {
+    flex-direction: column;
+  }
+
+  .declaration_statement {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portrait_picture {
+    width: 90%;
+  }
+
+  .hero_landing {
+    height: 45vh;
+  }
+
+  .declaration_statement h1 {
+    font-size: 3em;
+  }
+
+  .declaration_statement p {
+    font-size: 1.8em;
+  }
+
+  .background_info p {
+    font-size: 1.8em;
+  }
+
+  footer {
+    height: 10em;
+  }
+
+  footer p {
+    font-size: 2em;
+  }
+
+  .icon {
+    font-size: 4em;
+  }
+
+  .resume_body {
+    font-size: 2em;
+  }
+
+  .resume_body p, li {
+    font-size: 0.8em;
+  }
+
+  .title_date_div {
+    flex-direction: column;
+  }
+
+  .resume_body h4 {
+    font-size: .9em;
+    margin-bottom: -0.7em;
+  }
+
+  .title_date_div h5 {
+    font-size: 0.7em;
+  }
+
+  .skill_div {
+    flex-direction: column;
+  }
+
+  .btn_div a {
+    margin-top: 0;
+  }
+
+  .form_container {
+    width: 70%;
+    height: 79vh;
+  }
+
+  .contact_message h3 {
+    font-size: 2.5em;
+  }
+
+  .contact_message p {
+    font-size: 1.7em;
+  }
+
+  .container.grid h3 {
+    font-size: 2em;
+  }
+
+  #contact_form {
+    transform: translateY(-19em);
+  }
+
+  #contact_form input[type="text"] {
+    font-size: 1.5em;
+  }
+
+  .form_control input {
+    height: 2.5em;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .projects_container {
+    display: flex;
+    grid-gap: 2em;
+    width: 75%;
+    margin: 4em auto;
+    flex-direction: column;
+  }
+
+  .project_heading {
+    font-size: 2em;
+  }
+
+  .project_card p {
+    margin: 0 0.5em 0.5em 0.5em;
+    font-size: 1.4em;
   }
 }
 
@@ -573,6 +885,158 @@ and (min-device-width: 375px)
 and (max-device-width: 667px) {
   .nav_list {
     display: none;
+  }
+
+  header {
+    height: 10em;
+  }
+
+  .header_nav h2 {
+    font-size: 3em;
+  }
+
+  .menu_btn_burger,
+  .menu_btn_burger::before,
+  .menu_btn_burger::after {
+    width: 75px;
+    height: 6px;
+  }
+
+  .menu_btn_burger::before {
+    transform: translateY(-16px);
+  }
+
+  .menu_btn_burger::after {
+    transform: translateY(16px);
+  }
+
+  .menu_btn {
+    height: 150px;
+  }
+
+  .mobile_nav li {
+    font-size: 2em;
+  }
+
+  .hero_body {
+    flex-direction: column;
+  }
+
+  .declaration_statement {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portrait_picture {
+    width: 90%;
+  }
+
+  .hero_landing {
+    height: 55vh;
+  }
+
+  .declaration_statement h1 {
+    font-size: 3em;
+  }
+
+  .declaration_statement p {
+    font-size: 1.8em;
+  }
+
+  .background_info p {
+    font-size: 1.8em;
+  }
+
+  footer {
+    height: 10em;
+  }
+
+  footer p {
+    font-size: 2em;
+  }
+
+  .icon {
+    font-size: 4em;
+  }
+
+  .resume_body {
+    font-size: 2em;
+  }
+
+  .resume_body p, li {
+    font-size: 0.8em;
+  }
+
+  .title_date_div {
+    flex-direction: column;
+  }
+
+  .resume_body h4 {
+    font-size: .9em;
+    margin-bottom: -0.7em;
+  }
+
+  .title_date_div h5 {
+    font-size: 0.7em;
+  }
+
+  .skill_div {
+    flex-direction: column;
+  }
+
+  .btn_div a {
+    margin-top: 0;
+  }
+
+  .form_container {
+    height: 95vh;
+  }
+
+  .contact_message h3 {
+    font-size: 2.5em;
+  }
+
+  .contact_message p {
+    font-size: 1.7em;
+  }
+
+  .container.grid h3 {
+    font-size: 2em;
+  }
+
+  #contact_form {
+    transform: translateY(-19em);
+  }
+
+  #contact_form input[type="text"] {
+    font-size: 1.5em;
+  }
+
+  .form_control input {
+    height: 2.5em;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .projects_container {
+    display: flex;
+    grid-gap: 2em;
+    width: 75%;
+    margin: 4em auto;
+    flex-direction: column;
+  }
+
+  .project_heading {
+    font-size: 2em;
+  }
+
+  .project_card p {
+    margin: 0 0.5em 0.5em 0.5em;
+    font-size: 1.4em;
   }
 }
 
@@ -589,6 +1053,159 @@ and (max-device-width: 736px) {
   .nav_list {
     display: none;
   }
+
+  header {
+    height: 10em;
+  }
+
+  .header_nav h2 {
+    font-size: 3em;
+  }
+
+  .menu_btn_burger,
+  .menu_btn_burger::before,
+  .menu_btn_burger::after {
+    width: 75px;
+    height: 6px;
+  }
+
+  .menu_btn_burger::before {
+    transform: translateY(-16px);
+  }
+
+  .menu_btn_burger::after {
+    transform: translateY(16px);
+  }
+
+  .menu_btn {
+    height: 150px;
+  }
+
+  .mobile_nav li {
+    font-size: 2em;
+  }
+
+  .hero_body {
+    flex-direction: column;
+  }
+
+  .declaration_statement {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portrait_picture {
+    width: 90%;
+  }
+
+  .hero_landing {
+    height: 45vh;
+  }
+
+  .declaration_statement h1 {
+    font-size: 3em;
+  }
+
+  .declaration_statement p {
+    font-size: 1.8em;
+  }
+
+  .background_info p {
+    font-size: 1.8em;
+  }
+
+  footer {
+    height: 10em;
+  }
+
+  footer p {
+    font-size: 2em;
+  }
+
+  .icon {
+    font-size: 4em;
+  }
+
+  .resume_body {
+    font-size: 2em;
+  }
+
+  .resume_body p, li {
+    font-size: 0.8em;
+  }
+
+  .title_date_div {
+    flex-direction: column;
+  }
+
+  .resume_body h4 {
+    font-size: .9em;
+    margin-bottom: -0.7em;
+  }
+
+  .title_date_div h5 {
+    font-size: 0.7em;
+  }
+
+  .skill_div {
+    flex-direction: column;
+  }
+
+  .btn_div a {
+    margin-top: 0;
+  }
+
+  .form_container {
+    width: 70%;
+    height: 79vh;
+  }
+
+  .contact_message h3 {
+    font-size: 2.5em;
+  }
+
+  .contact_message p {
+    font-size: 1.7em;
+  }
+
+  .container.grid h3 {
+    font-size: 2em;
+  }
+
+  #contact_form {
+    transform: translateY(-19em);
+  }
+
+  #contact_form input[type="text"] {
+    font-size: 1.5em;
+  }
+
+  .form_control input {
+    height: 2.5em;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .projects_container {
+    display: flex;
+    grid-gap: 2em;
+    width: 75%;
+    margin: 4em auto;
+    flex-direction: column;
+  }
+
+  .project_heading {
+    font-size: 2em;
+  }
+
+  .project_card p {
+    margin: 0 0.5em 0.5em 0.5em;
+    font-size: 1.4em;
+  }
 }
 
 /* ----------- iPhone X ----------- */
@@ -600,6 +1217,159 @@ and (max-device-width: 800px) {
   .nav_list {
     display: none;
   }
+
+  header {
+    height: 10em;
+  }
+
+  .header_nav h2 {
+    font-size: 3em;
+  }
+
+  .menu_btn_burger,
+  .menu_btn_burger::before,
+  .menu_btn_burger::after {
+    width: 75px;
+    height: 6px;
+  }
+
+  .menu_btn_burger::before {
+    transform: translateY(-16px);
+  }
+
+  .menu_btn_burger::after {
+    transform: translateY(16px);
+  }
+
+  .menu_btn {
+    height: 150px;
+  }
+
+  .mobile_nav li {
+    font-size: 2em;
+  }
+
+  .hero_body {
+    flex-direction: column;
+  }
+
+  .declaration_statement {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portrait_picture {
+    width: 90%;
+  }
+
+  .hero_landing {
+    height: 45vh;
+  }
+
+  .declaration_statement h1 {
+    font-size: 3em;
+  }
+
+  .declaration_statement p {
+    font-size: 1.8em;
+  }
+
+  .background_info p {
+    font-size: 1.8em;
+  }
+
+  footer {
+    height: 10em;
+  }
+
+  footer p {
+    font-size: 2em;
+  }
+
+  .icon {
+    font-size: 4em;
+  }
+
+  .resume_body {
+    font-size: 2em;
+  }
+
+  .resume_body p, li {
+    font-size: 0.8em;
+  }
+
+  .title_date_div {
+    flex-direction: column;
+  }
+
+  .resume_body h4 {
+    font-size: .9em;
+    margin-bottom: -0.7em;
+  }
+
+  .title_date_div h5 {
+    font-size: 0.7em;
+  }
+
+  .skill_div {
+    flex-direction: column;
+  }
+
+  .btn_div a {
+    margin-top: 0;
+  }
+
+  .form_container {
+    width: 70%;
+    height: 79vh;
+  }
+
+  .contact_message h3 {
+    font-size: 2.5em;
+  }
+
+  .contact_message p {
+    font-size: 1.7em;
+  }
+
+  .container.grid h3 {
+    font-size: 2em;
+  }
+
+  #contact_form {
+    transform: translateY(-19em);
+  }
+
+  #contact_form input[type="text"] {
+    font-size: 1.5em;
+  }
+
+  .form_control input {
+    height: 2.5em;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .projects_container {
+    display: flex;
+    grid-gap: 2em;
+    width: 75%;
+    margin: 4em auto;
+    flex-direction: column;
+  }
+
+  .project_heading {
+    font-size: 2em;
+  }
+
+  .project_card p {
+    margin: 0 0.5em 0.5em 0.5em;
+    font-size: 1.4em;
+  }
 }
 
 /* ----------- iPhone 11 ----------- */
@@ -608,6 +1378,159 @@ and (min-device-width: 414px)
 and (device-height: 896px) {
   .nav_list {
     display: none;
+  }
+
+  header {
+    height: 10em;
+  }
+
+  .header_nav h2 {
+    font-size: 3em;
+  }
+
+  .menu_btn_burger,
+  .menu_btn_burger::before,
+  .menu_btn_burger::after {
+    width: 75px;
+    height: 6px;
+  }
+
+  .menu_btn_burger::before {
+    transform: translateY(-16px);
+  }
+
+  .menu_btn_burger::after {
+    transform: translateY(16px);
+  }
+
+  .menu_btn {
+    height: 150px;
+  }
+
+  .mobile_nav li {
+    font-size: 2em;
+  }
+
+  .hero_body {
+    flex-direction: column;
+  }
+
+  .declaration_statement {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portrait_picture {
+    width: 90%;
+  }
+
+  .hero_landing {
+    height: 45vh;
+  }
+
+  .declaration_statement h1 {
+    font-size: 3em;
+  }
+
+  .declaration_statement p {
+    font-size: 1.8em;
+  }
+
+  .background_info p {
+    font-size: 1.8em;
+  }
+
+  footer {
+    height: 10em;
+  }
+
+  footer p {
+    font-size: 2em;
+  }
+
+  .icon {
+    font-size: 4em;
+  }
+
+  .resume_body {
+    font-size: 2em;
+  }
+
+  .resume_body p, li {
+    font-size: 0.8em;
+  }
+
+  .title_date_div {
+    flex-direction: column;
+  }
+
+  .resume_body h4 {
+    font-size: .9em;
+    margin-bottom: -0.7em;
+  }
+
+  .title_date_div h5 {
+    font-size: 0.7em;
+  }
+
+  .skill_div {
+    flex-direction: column;
+  }
+
+  .btn_div a {
+    margin-top: 0;
+  }
+
+  .form_container {
+    width: 70%;
+    height: 79vh;
+  }
+
+  .contact_message h3 {
+    font-size: 2.5em;
+  }
+
+  .contact_message p {
+    font-size: 1.7em;
+  }
+
+  .container.grid h3 {
+    font-size: 2em;
+  }
+
+  #contact_form {
+    transform: translateY(-19em);
+  }
+
+  #contact_form input[type="text"] {
+    font-size: 1.5em;
+  }
+
+  .form_control input {
+    height: 2.5em;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .projects_container {
+    display: flex;
+    grid-gap: 2em;
+    width: 75%;
+    margin: 4em auto;
+    flex-direction: column;
+  }
+
+  .project_heading {
+    font-size: 2em;
+  }
+
+  .project_card p {
+    margin: 0 0.5em 0.5em 0.5em;
+    font-size: 1.4em;
   }
 }
 
@@ -618,6 +1541,159 @@ and (device-height: 812px) {
   .nav_list {
     display: none;
   }
+
+  header {
+    height: 10em;
+  }
+
+  .header_nav h2 {
+    font-size: 3em;
+  }
+
+  .menu_btn_burger,
+  .menu_btn_burger::before,
+  .menu_btn_burger::after {
+    width: 75px;
+    height: 6px;
+  }
+
+  .menu_btn_burger::before {
+    transform: translateY(-16px);
+  }
+
+  .menu_btn_burger::after {
+    transform: translateY(16px);
+  }
+
+  .menu_btn {
+    height: 150px;
+  }
+
+  .mobile_nav li {
+    font-size: 2em;
+  }
+
+  .hero_body {
+    flex-direction: column;
+  }
+
+  .declaration_statement {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portrait_picture {
+    width: 90%;
+  }
+
+  .hero_landing {
+    height: 45vh;
+  }
+
+  .declaration_statement h1 {
+    font-size: 3em;
+  }
+
+  .declaration_statement p {
+    font-size: 1.8em;
+  }
+
+  .background_info p {
+    font-size: 1.8em;
+  }
+
+  footer {
+    height: 10em;
+  }
+
+  footer p {
+    font-size: 2em;
+  }
+
+  .icon {
+    font-size: 4em;
+  }
+
+  .resume_body {
+    font-size: 2em;
+  }
+
+  .resume_body p, li {
+    font-size: 0.8em;
+  }
+
+  .title_date_div {
+    flex-direction: column;
+  }
+
+  .resume_body h4 {
+    font-size: .9em;
+    margin-bottom: -0.7em;
+  }
+
+  .title_date_div h5 {
+    font-size: 0.7em;
+  }
+
+  .skill_div {
+    flex-direction: column;
+  }
+
+  .btn_div a {
+    margin-top: 0;
+  }
+
+  .form_container {
+    width: 70%;
+    height: 79vh;
+  }
+
+  .contact_message h3 {
+    font-size: 2.5em;
+  }
+
+  .contact_message p {
+    font-size: 1.7em;
+  }
+
+  .container.grid h3 {
+    font-size: 2em;
+  }
+
+  #contact_form {
+    transform: translateY(-19em);
+  }
+
+  #contact_form input[type="text"] {
+    font-size: 1.5em;
+  }
+
+  .form_control input {
+    height: 2.5em;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .projects_container {
+    display: flex;
+    grid-gap: 2em;
+    width: 75%;
+    margin: 4em auto;
+    flex-direction: column;
+  }
+
+  .project_heading {
+    font-size: 2em;
+  }
+
+  .project_card p {
+    margin: 0 0.5em 0.5em 0.5em;
+    font-size: 1.4em;
+  }
 }
 
 /* ----------- iPhone 11 Pro Max----------- */
@@ -626,6 +1702,159 @@ and (min-device-width: 414px)
 and (device-height: 896px) {
   .nav_list {
     display: none;
+  }
+
+  header {
+    height: 10em;
+  }
+
+  .header_nav h2 {
+    font-size: 3em;
+  }
+
+  .menu_btn_burger,
+  .menu_btn_burger::before,
+  .menu_btn_burger::after {
+    width: 75px;
+    height: 6px;
+  }
+
+  .menu_btn_burger::before {
+    transform: translateY(-16px);
+  }
+
+  .menu_btn_burger::after {
+    transform: translateY(16px);
+  }
+
+  .menu_btn {
+    height: 150px;
+  }
+
+  .mobile_nav li {
+    font-size: 2em;
+  }
+
+  .hero_body {
+    flex-direction: column;
+  }
+
+  .declaration_statement {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portrait_picture {
+    width: 90%;
+  }
+
+  .hero_landing {
+    height: 45vh;
+  }
+
+  .declaration_statement h1 {
+    font-size: 3em;
+  }
+
+  .declaration_statement p {
+    font-size: 1.8em;
+  }
+
+  .background_info p {
+    font-size: 1.8em;
+  }
+
+  footer {
+    height: 10em;
+  }
+
+  footer p {
+    font-size: 2em;
+  }
+
+  .icon {
+    font-size: 4em;
+  }
+
+  .resume_body {
+    font-size: 2em;
+  }
+
+  .resume_body p, li {
+    font-size: 0.8em;
+  }
+
+  .title_date_div {
+    flex-direction: column;
+  }
+
+  .resume_body h4 {
+    font-size: .9em;
+    margin-bottom: -0.7em;
+  }
+
+  .title_date_div h5 {
+    font-size: 0.7em;
+  }
+
+  .skill_div {
+    flex-direction: column;
+  }
+
+  .btn_div a {
+    margin-top: 0;
+  }
+
+  .form_container {
+    width: 70%;
+    height: 79vh;
+  }
+
+  .contact_message h3 {
+    font-size: 2.5em;
+  }
+
+  .contact_message p {
+    font-size: 1.7em;
+  }
+
+  .container.grid h3 {
+    font-size: 2em;
+  }
+
+  #contact_form {
+    transform: translateY(-19em);
+  }
+
+  #contact_form input[type="text"] {
+    font-size: 1.5em;
+  }
+
+  .form_control input {
+    height: 2.5em;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .projects_container {
+    display: flex;
+    grid-gap: 2em;
+    width: 75%;
+    margin: 4em auto;
+    flex-direction: column;
+  }
+
+  .project_heading {
+    font-size: 2em;
+  }
+
+  .project_card p {
+    margin: 0 0.5em 0.5em 0.5em;
+    font-size: 1.4em;
   }
 }
 
@@ -636,6 +1865,159 @@ and (device-height: 844px) {
   .nav_list {
     display: none;
   }
+
+  header {
+    height: 10em;
+  }
+
+  .header_nav h2 {
+    font-size: 3em;
+  }
+
+  .menu_btn_burger,
+  .menu_btn_burger::before,
+  .menu_btn_burger::after {
+    width: 75px;
+    height: 6px;
+  }
+
+  .menu_btn_burger::before {
+    transform: translateY(-16px);
+  }
+
+  .menu_btn_burger::after {
+    transform: translateY(16px);
+  }
+
+  .menu_btn {
+    height: 150px;
+  }
+
+  .mobile_nav li {
+    font-size: 2em;
+  }
+
+  .hero_body {
+    flex-direction: column;
+  }
+
+  .declaration_statement {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portrait_picture {
+    width: 90%;
+  }
+
+  .hero_landing {
+    height: 45vh;
+  }
+
+  .declaration_statement h1 {
+    font-size: 3em;
+  }
+
+  .declaration_statement p {
+    font-size: 1.8em;
+  }
+
+  .background_info p {
+    font-size: 1.8em;
+  }
+
+  footer {
+    height: 10em;
+  }
+
+  footer p {
+    font-size: 2em;
+  }
+
+  .icon {
+    font-size: 4em;
+  }
+
+  .resume_body {
+    font-size: 2em;
+  }
+
+  .resume_body p, li {
+    font-size: 0.8em;
+  }
+
+  .title_date_div {
+    flex-direction: column;
+  }
+
+  .resume_body h4 {
+    font-size: .9em;
+    margin-bottom: -0.7em;
+  }
+
+  .title_date_div h5 {
+    font-size: 0.7em;
+  }
+
+  .skill_div {
+    flex-direction: column;
+  }
+
+  .btn_div a {
+    margin-top: 0;
+  }
+
+  .form_container {
+    width: 70%;
+    height: 79vh;
+  }
+
+  .contact_message h3 {
+    font-size: 2.5em;
+  }
+
+  .contact_message p {
+    font-size: 1.7em;
+  }
+
+  .container.grid h3 {
+    font-size: 2em;
+  }
+
+  #contact_form {
+    transform: translateY(-19em);
+  }
+
+  #contact_form input[type="text"] {
+    font-size: 1.5em;
+  }
+
+  .form_control input {
+    height: 2.5em;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .projects_container {
+    display: flex;
+    grid-gap: 2em;
+    width: 75%;
+    margin: 4em auto;
+    flex-direction: column;
+  }
+
+  .project_heading {
+    font-size: 2em;
+  }
+
+  .project_card p {
+    margin: 0 0.5em 0.5em 0.5em;
+    font-size: 1.4em;
+  }
 }
 
 /* ----------- iPhone 12 Pro Max----------- */
@@ -644,5 +2026,158 @@ and (min-device-width: 428px)
 and (device-height: 926px) {
   .nav_list {
     display: none;
+  }
+
+  header {
+    height: 10em;
+  }
+
+  .header_nav h2 {
+    font-size: 3em;
+  }
+
+  .menu_btn_burger,
+  .menu_btn_burger::before,
+  .menu_btn_burger::after {
+    width: 75px;
+    height: 6px;
+  }
+
+  .menu_btn_burger::before {
+    transform: translateY(-16px);
+  }
+
+  .menu_btn_burger::after {
+    transform: translateY(16px);
+  }
+
+  .menu_btn {
+    height: 150px;
+  }
+
+  .mobile_nav li {
+    font-size: 2em;
+  }
+
+  .hero_body {
+    flex-direction: column;
+  }
+
+  .declaration_statement {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portrait_picture {
+    width: 90%;
+  }
+
+  .hero_landing {
+    height: 45vh;
+  }
+
+  .declaration_statement h1 {
+    font-size: 3em;
+  }
+
+  .declaration_statement p {
+    font-size: 1.8em;
+  }
+
+  .background_info p {
+    font-size: 1.8em;
+  }
+
+  footer {
+    height: 10em;
+  }
+
+  footer p {
+    font-size: 2em;
+  }
+
+  .icon {
+    font-size: 4em;
+  }
+
+  .resume_body {
+    font-size: 2em;
+  }
+
+  .resume_body p, li {
+    font-size: 0.8em;
+  }
+
+  .title_date_div {
+    flex-direction: column;
+  }
+
+  .resume_body h4 {
+    font-size: .9em;
+    margin-bottom: -0.7em;
+  }
+
+  .title_date_div h5 {
+    font-size: 0.7em;
+  }
+
+  .skill_div {
+    flex-direction: column;
+  }
+
+  .btn_div a {
+    margin-top: 0;
+  }
+
+  .form_container {
+    width: 70%;
+    height: 79vh;
+  }
+
+  .contact_message h3 {
+    font-size: 2.5em;
+  }
+
+  .contact_message p {
+    font-size: 1.7em;
+  }
+
+  .container.grid h3 {
+    font-size: 2em;
+  }
+
+  #contact_form {
+    transform: translateY(-19em);
+  }
+
+  #contact_form input[type="text"] {
+    font-size: 1.5em;
+  }
+
+  .form_control input {
+    height: 2.5em;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .projects_container {
+    display: flex;
+    grid-gap: 2em;
+    width: 75%;
+    margin: 4em auto;
+    flex-direction: column;
+  }
+
+  .project_heading {
+    font-size: 2em;
+  }
+
+  .project_card p {
+    margin: 0 0.5em 0.5em 0.5em;
+    font-size: 1.4em;
   }
 }
